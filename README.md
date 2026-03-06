@@ -179,15 +179,3 @@ DAO Layer (BatchDAO / ParticipantDAO)
       ↕ JDBC
 MySQL Database (funfit_db)
 ```
-
----
-
-## 📸 Submission Checklist
-
-- [x] Source code in zip
-- [x] `database_setup.sql` script
-- [ ] Screenshots of outputs (take after running)
-
----
-
-*© 2024 FunFit — Built as part of the A-Z Backend & Database Development course*
