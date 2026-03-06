@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunFit - Zumba Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Fun<span>Fit</span></a>
+        <nav>
+            <a href="index.html" class="active">🏠 Home</a>
+            <a href="jsp/listBatches.jsp">📋 Batches</a>
+            <a href="jsp/listParticipants.jsp">👥 Participants</a>
+            <a href="add-batch.html">➕ Add Batch</a>
+            <a href="add-participant.html">➕ Add Participant</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Welcome to <span class="highlight">FunFit</span><br>Zumba Management</h1>
+        <p>Manage your Zumba batches, participants, and class schedules all in one place.</p>
+    </section>
+
+    <div class="stats-bar" style="padding: 0 20px;">
+        <div class="stat">
+            <div class="stat-number">🕐</div>
+            <div class="stat-label">Morning Batches</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">🌆</div>
+            <div class="stat-label">Evening Batches</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">💪</div>
+            <div class="stat-label">Active Participants</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">🎵</div>
+            <div class="stat-label">Zumba Sessions</div>
+        </div>
+    </div>
+
+    <div class="dashboard-grid">
+        <a href="jsp/listBatches.jsp" class="card">
+            <div class="card-icon">📋</div>
+            <h3>View All Batches</h3>
+            <p>Browse all registered Zumba batches, their slots (morning/evening), and timing.</p>
+        </a>
+
+        <a href="add-batch.html" class="card">
+            <div class="card-icon">➕</div>
+            <h3>Add New Batch</h3>
+            <p>Register a new Zumba batch with name, slot, and class timing.</p>
+        </a>
+
+        <a href="jsp/listParticipants.jsp" class="card">
+            <div class="card-icon">👥</div>
+            <h3>View All Participants</h3>
+            <p>See all enrolled participants and their assigned batches.</p>
+        </a>
+
+        <a href="add-participant.html" class="card">
+            <div class="card-icon">🧑‍🤸</div>
+            <h3>Enroll Participant</h3>
+            <p>Add a new participant with their contact info and assign them to a batch.</p>
+        </a>
+
+        <a href="update-batch.html" class="card">
+            <div class="card-icon">✏️</div>
+            <h3>Update Batch</h3>
+            <p>Edit batch details including name, slot, and scheduled time.</p>
+        </a>
+
+        <a href="update-participant.html" class="card">
+            <div class="card-icon">🔄</div>
+            <h3>Update Participant</h3>
+            <p>Modify participant details or reassign them to a different batch.</p>
+        </a>
+
+        <a href="jsp/participantsByBatch.jsp" class="card">
+            <div class="card-icon">🔍</div>
+            <h3>Search by Batch</h3>
+            <p>Query and view participants enrolled in a specific batch.</p>
+        </a>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 FunFit — Zumba Management System | Built with Java Servlets, JSP, JDBC &amp; MySQL</p>
+</footer>
+
+</body>
+</html>

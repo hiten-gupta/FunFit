@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Participant - FunFit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Fun<span>Fit</span></a>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="jsp/listBatches.jsp">📋 Batches</a>
+            <a href="jsp/listParticipants.jsp">👥 Participants</a>
+            <a href="add-batch.html">➕ Add Batch</a>
+            <a href="add-participant.html" class="active">➕ Add Participant</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &rsaquo; <a href="jsp/listParticipants.jsp">Participants</a> &rsaquo; Enroll Participant
+        </div>
+
+        <h1 class="page-title">🧑‍🤸 Enroll New Participant</h1>
+
+        <div class="form-card">
+            <form action="ParticipantController" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="e.g. John Watson" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone"
+                           placeholder="e.g. +91 99999 11111" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="e.g. john@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bid">Batch ID</label>
+                    <input type="number" id="bid" name="bid"
+                           placeholder="Enter Batch ID (e.g. 1)" min="1" required>
+                    <small style="color:#888; font-size:12px; margin-top:4px; display:block;">
+                        💡 <a href="jsp/listBatches.jsp" style="color:#e94560;">View available batches</a> to find the correct Batch ID.
+                    </small>
+                </div>
+
+                <div style="display:flex; gap:15px; margin-top:10px;">
+                    <button type="submit" class="btn btn-primary">💾 Enroll Participant</button>
+                    <a href="index.html" class="btn btn-secondary">✕ Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 FunFit — Zumba Management System</p>
+</footer>
+
+</body>
+</html>

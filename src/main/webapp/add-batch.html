@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Batch - FunFit</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="index.html" class="logo">Fun<span>Fit</span></a>
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="jsp/listBatches.jsp">📋 Batches</a>
+            <a href="jsp/listParticipants.jsp">👥 Participants</a>
+            <a href="add-batch.html" class="active">➕ Add Batch</a>
+            <a href="add-participant.html">➕ Add Participant</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> &rsaquo; <a href="jsp/listBatches.jsp">Batches</a> &rsaquo; Add New Batch
+        </div>
+
+        <h1 class="page-title">➕ Add New Batch</h1>
+
+        <div class="form-card">
+            <form action="BatchController" method="post">
+                <div class="form-group">
+                    <label for="name">Batch Name</label>
+                    <input type="text" id="name" name="name"
+                           placeholder="e.g. Zumba Beginners A" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="slot">Time Slot</label>
+                    <select id="slot" name="slot" required>
+                        <option value="" disabled selected>Select a slot</option>
+                        <option value="Morning">🌅 Morning</option>
+                        <option value="Evening">🌆 Evening</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="time">Class Time</label>
+                    <input type="text" id="time" name="time"
+                           placeholder="e.g. 07:00 AM - 08:00 AM" required>
+                </div>
+
+                <div style="display:flex; gap:15px; margin-top:10px;">
+                    <button type="submit" class="btn btn-primary">💾 Save Batch</button>
+                    <a href="index.html" class="btn btn-secondary">✕ Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>© 2024 FunFit — Zumba Management System</p>
+</footer>
+
+</body>
+</html>
